@@ -1,0 +1,23 @@
+/* Define uma regra para elementos com a classe "App-header" */
+.App-header {
+    /* Define a cor de fundo do cabeçalho como azul (#0a3792) */
+    background-color: #0a3792;
+
+    /* Define a altura do cabeçalho como 20% da altura da janela de visualização (20vh) */
+    height: 15vh;
+
+    /* Configura a exibição flexível para os elementos dentro do cabeçalho */
+    display: flex;
+
+    /* Centraliza verticalmente os elementos dentro do cabeçalho */
+    align-items: center;
+
+    /* Distribui o espaço entre os elementos no cabeçalho (espaço entre os lados) */
+    justify-content: space-between;
+
+    /* Define o tamanho da fonte com base na largura da janela de visualização */
+    font-size: calc(10px + 2vmin);
+
+    /* Define a cor do texto como branco */
+    color: white;
+}

@@ -1,0 +1,33 @@
+/* Define uma regra para elementos com a classe "App-Logotipo" */
+.App-Logotipo {
+    /* Configura a exibição flexível com uma coluna de itens */
+    display: flex;
+    flex-direction: column;
+
+    /* Centraliza os itens verticalmente no contêiner pai */
+    align-items: center;
+
+    /* Define uma margem à esquerda de 5% da largura do contêiner pai */
+    margin-left: 5vw;
+
+    /* Define regras para elementos com a classe "Logo-img" aninhados dentro de elementos com a classe "App-Logotipo" */
+    .Logo-img {
+        /* Define a largura dos elementos com a classe "Logo-img" como 20% da largura do contêiner pai */
+        width: 15vw;
+
+        /* Desativa a interação com os elementos, ou seja, eles não responderão a eventos de clique */
+        pointer-events: none;
+    }
+
+    /* Define regras para elementos com a classe "Logo-texto" aninhados dentro de elementos com a classe "App-Logotipo" */
+    .Logo-texto {
+        /* Define o tamanho da fonte dos elementos com a classe "Logo-texto" como 3% da largura do contêiner pai */
+        font-size: 2vw;
+
+        /* Remove margem ao redor dos elementos */
+        margin: 0;
+
+        /* Define a fonte como negrito */
+        font-weight: bold;
+    }
+}

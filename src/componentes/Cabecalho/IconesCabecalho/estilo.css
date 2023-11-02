@@ -1,0 +1,20 @@
+/* Define uma regra para elementos com a classe "icones" */
+.icones {
+    /* Configura a exibição flexível para os elementos, alinhando-os horizontalmente */
+    display: flex;
+    
+    /* Centraliza os elementos horizontalmente no contêiner pai */
+    justify-content: center;
+    
+    /* Define um espaçamento entre os elementos de 1% da largura do contêiner pai */
+    gap: 1vw;
+    
+    /* Define uma margem à direita de 5% da largura do contêiner pai */
+    margin-right: 5vw;
+}
+
+/* Define uma regra para elementos com a classe "icone" */
+.icone {
+    /* Define a largura dos elementos com a classe "icone" como 3% da largura do contêiner pai */
+    width: 3vw;
+}
