@@ -1,27 +1,28 @@
-// Importa o arquivo CSS para aplicar estilos ao componente
-import "./estilo.css";
-
-// Importa a imagem "login.png" e a associa à variável "login"
+import styled from 'styled-components';// Importa a biblioteca styled-components
+// Importa os caminhos das imagens e as atribui às variáveis "login" e "pesquisar"
 import login from "../../../imagens/login.png";
-
-// Importa a imagem "pesquisar.png" e a associa à variável "pesquisar"
 import pesquisar from "../../../imagens/pesquisar.png";
 
-// Define a função do componente React chamada "IconesCabecalho"
-function IconesCabecalho() {
-  return (
-    
-    // Início do elemento div com classe "icones"
-    <div className="icones">
+const listaIcone = [login, pesquisar]; // Cria uma matriz chamada "listaIcone" que contém os caminhos das imagens
 
-      {/* Exibe a imagem "pesquisar.png" com a classe "icone" e texto alternativo "login" */}
-      <img src={pesquisar} className="icone" alt="login" />
-      {/* Exibe a imagem "login.png" com a classe "icone" e texto alternativo "login" */}
-      <img src={login} className="icone" alt="login" />
-      
-    </div>
+// Define um componente "Icones" com estilos usando styled-components
+const Icones = styled.div`
+  display: flex;                  /* Configura a exibição flexível para os elementos, alinhando-os horizontalmente */
+  justify-content: center;        /* Centraliza os elementos horizontalmente no contêiner pai */
+  gap: 1vw;                       /* Define um espaçamento entre os elementos de 1% da largura do contêiner pai */
+  margin-right: 5vw;              /* Define uma margem à direita de 5% da largura do contêiner pai */
+  .icone {                        /* Define uma regra para elementos com a classe "icone" */
+    width: 3vw;                   /* Define a largura dos elementos com a classe "icone" como 3% da largura do contêiner pai */
+  }
+`
+function IconesCabecalho() { // Define o componente React "IconesCabecalho"
+  return (
+    <Icones> {/* Renderiza o componente "Icones"*/}
+      {listaIcone.map((icone) => (
+        <img src={icone} className="icone" alt="login" /> /* Faz um mapeamento da "listaIcone" para renderizar as imagens */
+      ))}
+    </Icones>
   );
 }
+export default IconesCabecalho;// Exporta o componente "IconesCabecalho" para uso em outros lugares
 
-// Exporta o componente React "IconesCabecalho" para uso em outros lugares
-export default IconesCabecalho;
