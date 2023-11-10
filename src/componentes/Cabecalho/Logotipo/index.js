@@ -25,4 +25,4 @@ function Logotipo() {// Define a função do componente React chamada "Logotipo"
     </LogoTipo>   
   );
 }
-export default Logotipo;// Exporta o componente React "Logotipo" para uso em outros lugares
+export default Logotipo;// Exporta o componente React "Logotipo" para uso em outros lugares 
